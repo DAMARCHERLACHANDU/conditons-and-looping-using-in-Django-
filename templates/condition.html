@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<h1> if condition </h1> 
+
+{% if age > 18 %}
+        <h1>{{name}}</h1>
+{% endif %}
+
+
+<h1> if-else condition </h1>
+<h1>VOTING</h1>
+{% if age > 18 %}
+    <h1>{{ name }} Eligable for Voting age {{ age }}</h1>
+{% else %}
+    <h1>Not Eligable your age is {{ age }}</h1>
+{% endif %}
+
+
+<h1> elif condition </h1>
+{% if age < 18 %}
+    <h1>NO Marriage your age is {{ age }}</h1>
+{% elif age > 25  %}
+    <h1>Eligable to do Marriage {{ age }}</h1>
+{% elif age > 40 %}
+    <h1>Late to do Marriage {{ age }}</h1>
+{% else %}
+    <h1>not eligable  {{ age }}</h1>
+{% endif %}
+
+
+
+
+<h1> For Loop</h1>
+<h1>Fruits List:</h1>
+<ul>
+    {% for d in items %}
+        <li>{{ d }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
